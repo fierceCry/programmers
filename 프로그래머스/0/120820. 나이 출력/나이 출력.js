@@ -3,9 +3,8 @@ function solution(age) {
         return;
     }
     
-    const currentYear = 2022;
-    
-    const birthYear = currentYear - age + 1;
+    const currentYear = new Date().getFullYear();
+    const birthYear = currentYear - age -1;
     
     return birthYear;
 }
